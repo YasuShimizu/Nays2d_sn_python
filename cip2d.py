@@ -64,7 +64,7 @@ def v_cal1(vn,gvx,gvy,u_vp,v,fn,gxn,gyn,nx,ny,ds,dnj,dt):
             a1=((gvx[im,j]+gvx[i,j])*dx*isn-2.*(vn[i,j]-vn[im,j]))/(dx**3*isn)
             b1=((gvy[i,jm]+gvy[i,j])*dy*jsn-2.*(vn[i,j]-vn[i,jm]))/(dy**3*jsn)
             e1=(3.*(vn[im,j]-vn[i,j])+(gvx[im,j]+2.*gvx[i,j])*dx*isn)/dx**2
-            f1=(3.*(vn[i,jm]-vn[i,j])+(gvx[i,jm]+2.*gvy[i,j])*dy*jsn)/dy**2
+            f1=(3.*(vn[i,jm]-vn[i,j])+(gvy[i,jm]+2.*gvy[i,j])*dy*jsn)/dy**2
             tmp=vn[i,j]-vn[i,jm]-vn[im,j]+vn[im,jm]
             tmq1=gvy[im,j]-gvy[i,j]
             tmq2=gvx[i,jm]-gvx[i,j]
